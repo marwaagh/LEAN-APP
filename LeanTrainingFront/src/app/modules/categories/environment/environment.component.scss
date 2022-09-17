@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+.h1 {
+  font-family: "heebo";
+  background-size: 100%;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #060e34;
+}
+.grid {
+  display: grid;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(40, 32, 2, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(3, 3, 49, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 3rem;
+}
+
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #08082e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #946e3c;
+  background-color: #ffffff;
+  border: 2px solid #946e3c;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #946e3c;
+  color: #fff;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+
+///////////////////details////////////////////////////////
+.tt {
+  margin: 20px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.6em;
+  letter-spacing: .6em;
+  text-transform: uppercase;
+  font-family: Montserrat,sans-serif;
+  color: #b29063;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.p, .ul li{
+  color: grey;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+.h2 {
+  display: block;
+  font-size: 4rem ;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 300;
+  font-family: Marcellus,serif;
+}
+  .button {
+    background-color: #12055a; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px 1px;
+    cursor: pointer;
+  }
+  .button2 {background-color: #06577f;} /* Blue */
+  .button3 {background-color: #b29063;} /* Red */ 
+  .button4{background-color: transparent; color: white; border: solid 2px white;}
+  .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+width: auto;
+margin-top: 20px;
+padding: 10px 18px;
+background-color: #7e5c1d;
+color: white;
+border: solid 1px #ffffff;
+float: right;
+width: 40%;
+display: block;
+}
+.cancelbtn1 {
+width: 40%;
+display: block;
+background-color: white;
+padding: 10px 18px;
+color: #7e5c1d;
+border: solid 1px #7e5c1d;
+justify-content: center;
+float: right;
+}
+.cancelbtn1:hover{
+background-color: #7e5c1d;
+color: white;
+}
+.cancelbtn:hover{
+background-color: #ffffff;
+color: #7e5c1d;
+border: solid 1px #7e5c1d;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(255, 255, 255); /* Fallback color */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+//margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid rgb(255, 255, 255);
+width: 100%; /* Could be more or less, depending on screen size */
+height: 100%;
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: rgb(114, 98, 24);
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: rgb(109, 80, 17);
+cursor: pointer;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+   display: block;
+   float: none;
+}
+.cancelbtn {
+   width: 100%;
+}
+}

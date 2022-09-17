@@ -1,0 +1,68 @@
+<div class="contact-page" style="overflow: hidden;">
+        <div class="container-fluid" style="margin: -20px -20px 0px -30px;">
+    
+            <div >
+                <div class="col-md-12">
+               <img style="width: 120%; height: 700px; transform: scaleX(-1);" src="https://img.freepik.com/free-photo/creative-flat-lay-photo-workspace-desk_7861-985.jpg?t=st=1656706696~exp=1656707296~hmac=0134150fa0f34ce5916665955adfefb31aeaa71368ceaddd67e0bcff6754f6bd&w=740">
+                <div class="content1">
+                    <form [formGroup]="formContact" #formContactDirective="ngForm" (ngSubmit)="onSubmit(formContact.value)" novalidate>
+                        <div class="bootstrap-wrapper">
+                          <div class="container-fluid">
+                          <div class="row" style="margin-top: 20px; display: block;">
+                         
+                       <!-- Username field -->
+                          <mat-form-field class="w-100 p-3">
+                          <mat-label>Nom Complet</mat-label>
+                          <input class="input" formControlName="name" matInput placeholder="écrire içi" required />    
+                          </mat-form-field>
+
+                          <!-- Password field -->
+                          <mat-form-field class="w-100 p-3">
+                          <mat-label>Email</mat-label>
+                          <input class="input" formControlName="email" required matInput placeholder="écrire içi" />
+                          </mat-form-field>
+                          <!-- Password field -->
+                          <mat-form-field class="w-100 p-3">
+                            <mat-label>Message</mat-label>
+                            <input class="input" formControlName="msg" required matInput placeholder="écrire içi" />
+                            </mat-form-field>
+                          <div >
+                          <button class="cancelbtn1" type="submit">Envoyer</button>
+                      </div></div></div></div></form>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--
+  <section id="contact">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+                <h6 class="text-primary">CONTACT</h6>
+                <h1>Get In Touch</h1>
+                <p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+                    in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+            </div>
+        </div>
+        <form action="" class="row g-3 justify-content-center">
+            <div class="col-md-5">
+                <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="col-md-5">
+                <input type="text" class="form-control" placeholder="Enter E-mail">
+            </div>
+            <div class="col-md-10">
+                <input type="text" class="form-control" placeholder="Enter Subject">
+            </div>
+            <div class="col-md-10">
+                <textarea name="" id="" cols="30" rows="5" class="form-control"
+                    placeholder="Enter Message"></textarea>
+            </div>
+            <div class="col-md-10 d-grid">
+                <button class="btn btn-primary">Contact</button>
+            </div>
+        </form>
+
+    </div>
+</section> 
+   -->

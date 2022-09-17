@@ -1,0 +1,56 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav class="navbar navbar-expand-lg navbar-light">
+	<img style="height: 8vh;" src="https://leanpartners.tn/v2/wp-content/uploads/2022/04/cropped-LOGO-V-4.jpg">
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav">
+			<li class="nav-item active">
+			  <a class="nav-link" href="/">Accueil</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="/about">A Propos</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Formations </a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				  <a class="dropdown-item" href="/manufactoring">Manufacturing</a>
+				  <a class="dropdown-item" href="/qualite">Qualité</a>
+				  <a class="dropdown-item" href="/environment">Environnement</a>
+				  <a class="dropdown-item" href="/supplych">Supply Chain</a>
+				  <a class="dropdown-item" href="/leadership">Leadership</a>
+				  <a class="dropdown-item" href="/innovation">Innovation</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/contact">Contact</a>
+			  </li>
+			</ul>
+
+			<!--<mat-icon aria-hidden="true" aria-label="Example home icon" fontIcon="home"></mat-icon>
+			-->
+		  </div><form class="example" [formGroup]="fform" (ngSubmit)="search()" style="margin-top: 20px;" novalidate>
+			<button type="submit"><i class="fa fa-search"></i></button>
+			<mat-form-field>
+				<input class="ssearch" [(ngModel)]="title" formControlName="title" matInput placeholder="Rechercher.." required />    
+			</mat-form-field>  
+		  </form>	
+		  <div style="display: flex; margin: 20px 0 0 0">
+			<a class="nav-link" href="/signin">
+			<i class='fas fa-sign-in-alt fa-lg'></i>
+		</a>|<a class="nav-link" href="/signup">
+		<i class='fas fa-user-plus fa-lg'></i></a>
+		<!--<i class='fas fa-sign-out-alt'></i>-->
+	</div>
+
+		</nav>
+
+
+
+
+
+

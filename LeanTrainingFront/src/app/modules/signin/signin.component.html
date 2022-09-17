@@ -1,0 +1,42 @@
+<body>
+    <div class="Section_top">
+        <div class="content1">
+        </div>
+    </div> 
+    
+  </body>
+  <div id="id00" class="modal">
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+        <span routerLink="/" class="close" title="Fermer cette Modale">&times;</span>
+      </div>
+      <div class="container1">
+        <form [formGroup]="signinForm" (ngSubmit)="signin()" novalidate>
+  
+        <div class="bootstrap-wrapper">
+          <div class="container-fluid">
+          <div class="row" style="margin-top: 20px; display: block;">
+         
+        <h2 class="tt" style="text-align: center;">Connexion</h2> <hr>
+          <!-- Username field -->
+          <mat-form-field class="w-100 p-3" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input class="input" [(ngModel)]="email" formControlName="email" matInput placeholder="écrire içi" required />    
+          </mat-form-field>
+          <!-- Password field -->
+          <mat-form-field class="w-100 p-3" appearance="outline">
+          <mat-label>Mot de Passe</mat-label>
+          <input class="input" formControlName="password" type="password" required matInput placeholder="écrire içi" />
+          </mat-form-field>
+         
+          <div class="">
+          <button class="cancelbtn1" type="submit">S'inscrire</button>
+      </div></div></div></div></form>
+      </div>
+      <div class="container1" style="background-color:#f1f1f1">
+        <span class="psw"><a routerLink="/signup">Vous n'avez pas un compte !</a></span>
+        <button type="button" routerLink="/" class="cancelbtn">Annuler</button>
+      </div>
+    </div>
+  </div>
+  

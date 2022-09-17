@@ -1,0 +1,68 @@
+<body>
+  <div class="Section_top">
+      <div class="content1">
+      </div>
+  </div> 
+  
+</body>
+<div id="id00" class="modal">
+  <div class="modal-content animate">
+    <div class="imgcontainer">
+      <span routerLink="/" class="close" title="Fermer cette Modale">&times;</span>
+    </div>
+    <div class="container1">
+      <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate>
+
+      <div class="bootstrap-wrapper">
+        <div class="container-fluid">
+        <div class="row" style="margin-top: 20px; display: block;">
+       
+          <h2 class="tt" style="text-align: center;">Inscription</h2> <hr>
+        <!-- Username field 
+        <mat-form-field class="w-100 p-3" appearance="outline">
+        <mat-label>Nom d'utilisateur</mat-label>
+        <input class="input" [(ngModel)]="user.username" name="username" matInput placeholder="écrire içi" required />
+    <mat-hint>le nom d'utilisateur doit etre unique</mat-hint>    
+    </mat-form-field>-->
+        <!-- first name -->
+      <mat-form-field class="w-100 p-3" appearance="outline">
+        <mat-label>Nom et prénom</mat-label>
+        <input class="input" formControlName="name" matInput required placeholder="écrire içi" />
+      </mat-form-field>
+        <!--email-->
+        <mat-form-field class="w-100 p-3" appearance="outline">
+          <mat-label>email</mat-label>
+          <input class="input" formControlName="email" type="text" matInput required placeholder="écrire içi" />
+          </mat-form-field>
+          <!-- Password field -->
+        <mat-form-field class="w-100 p-3" appearance="outline">
+          <mat-label>Mot de Passe</mat-label>
+          <input class="input" #input minlength="7" formControlName="password" type="password" required matInput placeholder="écrire içi" />
+          <mat-hint>le mot de passe doit avoir au minimum 7 caractères</mat-hint>   
+          <mat-hint align="end">{{input.value?.length || 0}}/7</mat-hint>
+        </mat-form-field>
+          <!--verif psw-->
+      <mat-form-field class="w-100 p-3" appearance="outline">
+        <mat-label>Vérifier le mot de Passe</mat-label>
+        <input class="input" required type="password" formControlName="password1" matInput placeholder="écrire içi" />
+        <mat-hint align="end">{{input.value?.length || 0}}/7</mat-hint>
+        </mat-form-field>
+        <!-- email -->
+      
+        <!-- phone number 
+        <mat-form-field class="w-100 p-3" appearance="outline">
+        <mat-label>Numéro de télephone</mat-label>
+        <input class="input" [(ngModel)]="user.phone" required name="phone" type="number" matInput placeholder="écrire içi" />
+        </mat-form-field>-->
+        <div class="">
+        <button class="cancelbtn1" type="submit">S'inscrire</button>
+    </div></div></div></div></form>
+      
+    
+    </div>
+    <div class="container1" style="background-color:#f1f1f1">
+      <span class="psw"><a routerLink="/signin">Vous avez déja un compte !</a></span>
+      <button type="button" routerLink="/" class="cancelbtn">Annuler</button>
+    </div>
+  </div>
+</div>

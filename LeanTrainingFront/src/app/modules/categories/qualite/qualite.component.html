@@ -1,0 +1,22 @@
+  <!--separatiiooooooooooooooooooooooooooooooooooooooooooooooooooooooooon-->
+
+  <div class="bg-light" (create)="createFormation()">
+    <div style="padding: 40px 0;">
+      <h1 class="h1">Qualité</h1>
+      <p style="font-size: 20px; color: rgb(4, 4, 44); text-align: center;" >Accroître la satisfaction des clients</p></div>
+        <div class="grid">
+          <div *ngFor="let formation of formations$ | async">
+          <div class="grid-item">
+            <div class="card">
+              <img class="card-img" src="{{formation.img}}" />
+              <div class="card-content">
+                <h1 class="card-header">{{formation.title}}</h1>
+                <p class="card-text">
+                    {{formation.body}} </p>
+                    <br><p> created at {{formation.created}}</p>
+                <button class="card-btn" (click)="Godetails(formation.title)">plus de détails <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div></div>
+        </div>
+      </div>

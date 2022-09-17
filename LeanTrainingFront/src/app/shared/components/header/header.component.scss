@@ -1,0 +1,89 @@
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+    font-size: large;
+    font-weight: 400;
+    margin: 0 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #c28d6c;
+}
+.navbar .navbar-nav .nav-link:active{
+  color: #b38264;
+  font-weight: 500;
+  
+}
+@media screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-toggle::after {
+    border-bottom: 0.3em solid;
+    border-top: 0;
+  }
+}
+	
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+form.example{
+  display: flex;
+}
+form.example .ssearch {
+  padding: 10px;
+  font-size: 17px;
+  //border: 1px solid rgb(37, 20, 0);
+  float: left;
+  width: 80%;
+  background: #ece1cb;
+  border-radius:0px 20px 20px 0px ;
+  border-left: none;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  border-right: none;
+  background: #ece1cb;
+  color: rgb(49, 22, 0);
+  font-size: 17px;
+  //border-left: 1px solid rgb(49, 22, 0);
+  border-radius: 20px 0px 0px 20px;
+  cursor: pointer;
+  margin-top: 18px;
+  height: 43px;
+}
+
+form.example button:hover {
+  background: #c2865c;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.collapse{
+  margin-left: 100px;
+  margin-top: 25px;
+  float: left;
+}
